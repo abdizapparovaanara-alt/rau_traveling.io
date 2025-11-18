@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rau_travel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>rau_travel</b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small header-container">
+  <img class="w3-image" src="https://i.pinimg.com/1200x/dc/c6/9d/dcc69dadce8f76e372ca0cbe0186e060.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle header-options">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Туры</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Отель</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rent car</button>
+    </div>
+
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Путешествуйте с нами по миру</h3>
+      <div class="w3-row-padding">
+        <div class="w3-half">
+          <label>Откуда</label>
+          <input class="w3-input w3-border" type="text" placeholder="Отъезд">
+        </div>
+        <div class="w3-half">
+          <label>Туда</label>
+          <input class="w3-input w3-border" type="text" placeholder="Прибытие">
+        </div>
+      </div>
+      <p><input type="date"><button class="w3-button w3-dark-grey"></button></p>
+      <a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="#" target="_blank">Поиск дат</a>
+    </div>
+
+    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Найдите лучшие отели</h3>
+      <p>Забронируйте отель у нас и получите лучшие тарифы и акции.</p>
+      <p>Мы знаем отели — мы знаем комфорт.</p>
+      <a class="w3-button w3-round-xxlarge w3-black w3-margin-bottom" href="#" target="_blank">Поиск</a>
+    </div>
+
+    <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Лучший прокат автомобилей в мире!</h3>
+      <p><span class="w3-tag w3-deep-orange">СКИДКА!</span> Специальное предложение при бронировании сегодня: скидка 25% в любой точке мира с rau_car_rent</p>
+      <input class="w3-input w3-border" type="text" placeholder="Пункт выдачи">
+      <a class="w3-button w3-dark-grey" href="#" target="_blank">Доступность поиска</a>
+    </div>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content main-content">
+  <div class="w3-container w3-margin-top">
+    <h3>Сейчас хорошие предложения</h3>
+    <h6> Скидка <strong> до </strong> 50%.</h6>
+  </div>
+
+  <div class="w3-row-padding w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="https://www.w3schools.com/w3images/cinqueterre.jpg" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://www.w3schools.com/w3images/newyork2.jpg" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">New York</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://www.w3schools.com/w3images/sanfran.jpg" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">San Francisco</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://www.w3schools.com/w3images/pisa.jpg" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Pisa</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Paris</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <h3>Иследуйте природу</h3>
+    <p>Путешествуйте с нами и увидейте природу в её лучшем виде.</p>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Получайте лучшие предложения первыми!</h2>
+      <p>Подпишитесь на нашу рассылку.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button class="w3-button w3-red w3-margin-top">Подписаться</button>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <h2>Связь с оператором</h2>
+    <p>Давайте забронируем вашу следующую поездку!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Almaty, KZ<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +7(777) 777 77-77<br>
+    <i class="fa fa-envelope" style="width:30px"></i> Email: rau_travel@mail.com<br>
+  </div>
+
+</div>
+
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Найдите нас на</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<script>
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) x[i].style.display = "none";
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
